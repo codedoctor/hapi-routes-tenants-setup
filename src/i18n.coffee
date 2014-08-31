@@ -19,7 +19,7 @@ module.exports =
   couldNotFindMethodsRoles: "Could not find 'methods.roles' in 'hapi-user-store-multi-tenant' plugin."
   couldNotFindMethodsUsers: "Could not find 'methods.users' in 'hapi-user-store-multi-tenant' plugin."
 
+  couldNotFindMethodsOauthAuth: "Could not find 'methods.oauthAuth' in 'hapi-oauth-store-multi-tenant' plugin."
   couldNotFindMethodsOauthScopes: "Could not find 'methods.oauthScopes' in 'hapi-oauth-store-multi-tenant' plugin."
   couldNotFindMethodsOauthApps: "Could not find 'methods.oauthApps' in 'hapi-oauth-store-multi-tenant' plugin."
-  couldNotFindMethodsOauthAdmin: "Could not find 'methods.admin' in 'hapi-oauth-store-multi-tenant' plugin."
 

@@ -18,6 +18,13 @@ Provides an enpoint to set up a tenant with
 
 Basically, this allows you to bootstrap an installation using the codedoctor libraries.
 
+FIX:
+* 2 clients, wtf
+* add tokens
+* don't return sensitive password info
+* remove mongoose artifacts
+
+
 
 ## Dependencies
 

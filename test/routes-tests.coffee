@@ -25,4 +25,5 @@ describe 'AN EMPTY DB', ->
 
           server.inject options, (response) ->
             response.statusCode.should.equal 201
+            console.log JSON.stringify(response.result)
             cb null,response

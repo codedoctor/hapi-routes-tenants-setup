@@ -12,8 +12,10 @@
   },
   "description": "Provides an HAPI endpoint to set up a new tenant.",
   "dependencies": {
+    "async": "0.9.0",
     "hoek": ">=2.4.1",
     "boom": ">=2.5.1",
+    "bson": ">=0.2.11",
     "joi": ">=4.6.2",
     "underscore": ">=1.7.0"
   },
@@ -21,7 +23,6 @@
     "hapi": ">=6.5.0"
   },
   "devDependencies": {
-    "async": "0.9.0",
     "blanket": "1.1.6",
     "codo": "2.0.9",
     "coffee-script": "1.7.1",

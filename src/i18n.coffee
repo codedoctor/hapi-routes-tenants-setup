@@ -23,3 +23,4 @@ module.exports =
   couldNotFindMethodsOauthScopes: "Could not find 'methods.oauthScopes' in 'hapi-oauth-store-multi-tenant' plugin."
   couldNotFindMethodsOauthApps: "Could not find 'methods.oauthApps' in 'hapi-oauth-store-multi-tenant' plugin."
 
+  secretKeyMismatch: "The 'secretKey' supplied in the payload does not match the secret key defined in the options."

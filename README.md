@@ -11,18 +11,13 @@
 
 Provides an enpoint to set up a tenant with
 
-* a default admin user
+* initial users
 * oauth scopes
 * roles
-* a default oauth client
+* a default oauth app + client
+* tokens for your users
 
 Basically, this allows you to bootstrap an installation using the codedoctor libraries.
-
-FIX:
-* 2 clients, wtf
-* add tokens
-* don't return sensitive password info
-* remove mongoose artifacts
 
 
 

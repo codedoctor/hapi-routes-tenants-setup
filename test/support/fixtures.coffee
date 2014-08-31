@@ -2,6 +2,7 @@
 
 module.exports = 
   payloadValid: 
+    secretKey: 'hello'
     tenantId: '01234567890123456789000b'
     clientId: '01234567890123456789000a'
     app:

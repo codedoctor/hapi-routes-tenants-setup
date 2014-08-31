@@ -51,7 +51,8 @@ module.exports = (plugin,options = {}) ->
       validate:
         payload: validationSchemas.payloadTenantSetupPost
     handler: (request, reply) ->
-      return cb Boom.badRequest(i18n.errorAtLeastOneUserRequired) unless request.payload.users && _.isArray(request.payload.users) && request.payload.users.length > 0
+      return reply Boom.badRequest(i18n.errorAtLeastOneUserRequired) unless request.payload.users && _.isArray(request.payload.users) && request.payload.users.length > 0
+      return reply Boom.badRequest(i18n.secretKeyMismatch) if options.secretKey && options.secretKey != request.payload.secretKey
 
       _tenantId = fnToObjectId(request.payload.tenantId) || fnCreateObjectId()
       clientId = fnToObjectId(request.payload.clientId) || fnCreateObjectId()
@@ -59,9 +60,8 @@ module.exports = (plugin,options = {}) ->
       appData = request.payload.app || {}
 
       appData._tenantId = _tenantId
-      appData.clients = [
-          clientId: clientId
-        ]
+      appData.clientId = clientId
+      appData.clients = []
 
       result = 
         _tenantId: _tenantId

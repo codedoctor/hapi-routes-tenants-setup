@@ -24,7 +24,8 @@ module.exports = loadServer = (cb) ->
       plugin: hapiOauthStoreMultiTenant
     ,
       plugin: index
-      options: {}
+      options:
+        secretKey: 'hello'
   ]
 
   mongoose.disconnect()

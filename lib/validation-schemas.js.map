@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "validation-schemas.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "validation-schemas.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA,SAAA;;AAAA,EAAA,GAAA,GAAM,OAAA,CAAQ,KAAR,CAAN,CAAA;;AAAA,EACA,IAAA,GAAO,OAAA,CAAQ,QAAR,CADP,CAAA;;AAAA,EAGA,MAAM,CAAC,OAAP,GAEE;AAAA,IAAA,sBAAA,EAAwB,GAAG,CAAC,MAAJ,CAAA,CAAY,CAAC,IAAb,CAAA,CAAmB,CAAC,OAApB,CAA4B;AAAA,MAAE,WAAA,EAAa,IAAf;AAAA,MAAqB,YAAA,EAAc,KAAnC;KAA5B,CAAxB;GALF,CAAA;AAAA"
+}

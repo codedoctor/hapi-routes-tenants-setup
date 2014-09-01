@@ -38,7 +38,7 @@
     "grunt-shell": "0.7.0",
     "hapi": "6.5.0",
     "hapi-user-store-multi-tenant": "1.0.x",
-    "hapi-oauth-store-multi-tenant": "1.0.x",
+    "hapi-oauth-store-multi-tenant": "1.2.x",
     "matchdep": "0.3.0",
     "mocha": "1.21.4",
     "mongoose": "3.8.14",

@@ -55,7 +55,7 @@ You then set the env variable HAPIROUTESTENANTSETUPSECRETKEY at your server.
 ## How to post from curl
 
 ```bash
-curl -H "Accept: application/json" -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
+curl -H "Content-Type: application/json" -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
 ```
 
 

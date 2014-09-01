@@ -1,0 +1,215 @@
+{
+   "_tenantId":"01234567890123456789000b",
+   "clientId":"01234567890123456789000a",
+   "roles":[
+      {
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d530928e",
+         "isInternal":false,
+         "description":"Read access to the site",
+         "name":"read"
+      },
+      {
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d530928f",
+         "isInternal":false,
+         "description":"Write access to the site",
+         "name":"write"
+      },
+      {
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d5309290",
+         "isInternal":false,
+         "description":"Allows to administer your site",
+         "name":"admin"
+      },
+      {
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d5309291",
+         "isInternal":true,
+         "description":"Gives full access to the platform",
+         "name":"platform-admin"
+      }
+   ],
+   "scopes":[
+      {
+         "name":"read",
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d5309292",
+         "roles":[
+
+         ],
+         "isInternal":false,
+         "developerDescription":"Read access to the data",
+         "description":"Allows this app to read your data."
+      },
+      {
+         "name":"write",
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d5309293",
+         "roles":[
+
+         ],
+         "isInternal":false,
+         "developerDescription":"Write access to the data",
+         "description":"Allows this app to write your data."
+      },
+      {
+         "name":"server-admin",
+         "_tenantId":"01234567890123456789000b",
+         "_id":"5403ce3f5451c758d5309294",
+         "roles":[
+            "server-admin"
+         ],
+         "isInternal":true,
+         "developerDescription":"Internal, only used within the platform",
+         "description":"Allows for the adminstration of the server."
+      }
+   ],
+   "users":[
+      {
+         "createdAt":"2014-09-01T01:39:11.669Z",
+         "updatedAt":"2014-09-01T01:39:11.669Z",
+         "username":"user1",
+         "primaryEmail":"mail@emial.com",
+         "_tenantId":"01234567890123456789000b",
+         "resourceLimits":[
+
+         ],
+         "isDeleted":false,
+         "deletedAt":null,
+         "_id":"5403ce3f5451c758d5309295",
+         "verified":false,
+         "locale":"en_us",
+         "timezone":0,
+         "gender":"",
+         "description":"",
+         "needsInit":false,
+         "onboardingState":null,
+         "roles":[
+            "read",
+            "write",
+            "admin",
+            "platform-admin"
+         ],
+         "emails":[
+            "mail@emial.com"
+         ],
+         "userImages":[
+
+         ],
+         "profileLinks":[
+
+         ],
+         "identities":[
+
+         ],
+         "token":{
+            "refreshToken":"5xDHx1Gm76phXeDkizjszxuXha8KHjdraUY2PWHDlc0Fnff5lTMtJNGtzxML72Hmb9tsf6MdOoc4L34e",
+            "scope":[
+               "read",
+               "write",
+               "server-admin"
+            ],
+            "expiresAt":"2014-09-01T02:39:11.693Z",
+            "identityType":"user",
+            "accessToken":"5403ce3f5451c758d5309299"
+         }
+      },
+      {
+         "createdAt":"2014-09-01T01:39:11.671Z",
+         "updatedAt":"2014-09-01T01:39:11.671Z",
+         "username":"user2",
+         "primaryEmail":"mail1@emial.com",
+         "_tenantId":"01234567890123456789000b",
+         "resourceLimits":[
+
+         ],
+         "isDeleted":false,
+         "deletedAt":null,
+         "_id":"5403ce3f5451c758d5309296",
+         "verified":false,
+         "locale":"en_us",
+         "timezone":0,
+         "gender":"",
+         "description":"",
+         "needsInit":false,
+         "onboardingState":null,
+         "roles":[
+            "read",
+            "write",
+            "admin"
+         ],
+         "emails":[
+            "mail1@emial.com"
+         ],
+         "userImages":[
+
+         ],
+         "profileLinks":[
+
+         ],
+         "identities":[
+
+         ],
+         "token":{
+            "refreshToken":"szZoxhym1QIyKTD9VGCTiGNtvGf2OFsuvcb6SHupxXgorpSiHSwjbK1KusRk6jMd3MCOvD6b14oRzFzh",
+            "scope":[
+               "read",
+               "write",
+               "server-admin"
+            ],
+            "expiresAt":"2014-09-01T02:39:11.696Z",
+            "identityType":"user",
+            "accessToken":"5403ce3f5451c758d530929a"
+         }
+      }
+   ],
+   "app":{
+      "createdAt":"2014-09-01T01:39:11.681Z",
+      "updatedAt":"2014-09-01T01:39:11.681Z",
+      "name":"somename",
+      "websiteUrl":"http://somesite.com",
+      "imageUrl":null,
+      "callbackUrl":null,
+      "notes":"Some comment",
+      "organizationName":"someorg",
+      "organizationUrl":"http://somesite.com",
+      "_tenantId":"01234567890123456789000b",
+      "accessibleBy":[
+
+      ],
+      "tags":[
+
+      ],
+      "isDeleted":false,
+      "deletedAt":null,
+      "createdByUserId":"5403ce3f5451c758d5309295",
+      "_id":"5403ce3f5451c758d5309297",
+      "stats":{
+         "tokensRevoked":0,
+         "tokensGranted":0
+      },
+      "redirectUrls":[
+
+      ],
+      "clients":[
+         {
+            "_id":"5403ce3f5451c758d5309298",
+            "revokedAt":null,
+            "createdAt":"2014-09-01T01:39:11.680Z",
+            "secret":"VuRuquyR74iJL9ZlKe4qmZ2vriS66woMcmp6gwJg",
+            "clientId":"01234567890123456789000a"
+         }
+      ],
+      "tosAcceptanceDate":"2014-09-01T01:39:11.673Z",
+      "isPublished":true,
+      "acceptTermsOfService":true,
+      "description":"",
+      "scopes":[
+         "read",
+         "write",
+         "server-admin"
+      ]
+   }
+}

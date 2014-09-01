@@ -17,7 +17,7 @@ Provides an enpoint to set up a tenant with
 * a default oauth app + client
 * tokens for your users
 
-Basically, this allows you to bootstrap an installation using the codedoctor libraries.
+Basically, this allows you to bootstrap an installation using the codedoctor libraries by providing a /tenants/setup endpoint that you can post to.
 
 Take a look at the [samples/sample.json](https://github.com/codedoctor/hapi-routes-tenants-setup/blob/master/samples/sample.json) file, which contains the typical sample data. Both
 tenantId and clientId are optional. The file [samples/result.json](https://github.com/codedoctor/hapi-routes-tenants-setup/blob/master/samples/result.json) shows you the result of posting the sample.json file.
@@ -55,7 +55,7 @@ You then set the env variable HAPIROUTESTENANTSETUPSECRETKEY at your server.
 ## How to post from curl
 
 ```bash
-curl -H "Accept: application/json" -X POST -d @samples/sample.json http://yoursite.com/tenants/setup
+curl -H "Accept: application/json" -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
 ```
 
 

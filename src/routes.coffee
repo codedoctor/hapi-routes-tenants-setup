@@ -48,6 +48,7 @@ module.exports = (plugin,options = {}) ->
     config:
       description: options.descriptionTenantSetupPost
       tags: options.tags
+      auth: false
       validate:
         payload: validationSchemas.payloadTenantSetupPost
     handler: (request, reply) ->

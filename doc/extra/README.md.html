@@ -47,8 +47,8 @@
 <li>roles</li>
 <li>a default oauth app + client</li>
 <li>tokens for your users</li>
-</ul><p>Basically, this allows you to bootstrap an installation using the codedoctor libraries.</p><p>Take a look at the samples/sample.json file, which contains the typical sample data. Both
-tenantId and clientId are optional.</p><h2 id="how-to-secure-this">How to secure this</h2><p>Several easy options:</p><ul>
+</ul><p>Basically, this allows you to bootstrap an installation using the codedoctor libraries by providing a /tenants/setup endpoint that you can post to.</p><p>Take a look at the <a href="https://github.com/codedoctor/hapi-routes-tenants-setup/blob/master/samples/sample.json">samples/sample.json</a> file, which contains the typical sample data. Both
+tenantId and clientId are optional. The file <a href="https://github.com/codedoctor/hapi-routes-tenants-setup/blob/master/samples/result.json">samples/result.json</a> shows you the result of posting the sample.json file.</p><h2 id="how-to-secure-this">How to secure this</h2><p>Several easy options:</p><ul>
 <li>Only include it when you run it for the first time, then remove it.</li>
 <li>supply a secret key, which must be included as the payload (secretKey). Something like so:</li>
 </ul>
@@ -69,9 +69,8 @@ pluginConf = [
 server.pack.register pluginConf, (err) -&gt;
   throw err if err
   ...
-</code></pre>
-<h2 id="how-to-post-from-curl">How to post from curl</h2>
-<pre><code class="lang-bash">curl -H &quot;Accept: application/json&quot; -X POST -d @samples/sample.json http://yoursite.com/tenants/setup
+</code></pre><p>You then set the env variable HAPIROUTESTENANTSETUPSECRETKEY at your server.</p><h2 id="how-to-post-from-curl">How to post from curl</h2>
+<pre><code class="lang-bash">curl -H &quot;Accept: application/json&quot; -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
 </code></pre>
 <h2 id="dependencies">Dependencies</h2>
 <ul>
@@ -116,7 +115,7 @@ server.pack.register pluginConf, (err) -&gt;
       </div>
     </div>
     <div id='footer'>
-  August 31, 14 18:39:09 by
+  August 31, 14 19:41:56 by
   <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
     Codo
   </a>

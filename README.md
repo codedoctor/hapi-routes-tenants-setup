@@ -19,6 +19,44 @@ Provides an enpoint to set up a tenant with
 
 Basically, this allows you to bootstrap an installation using the codedoctor libraries.
 
+Take a look at the samples/sample.json file, which contains the typical sample data. Both
+tenantId and clientId are optional.
+
+
+## How to secure this
+
+Several easy options:
+
+* Only include it when you run it for the first time, then remove it.
+* supply a secret key, which must be included as the payload (secretKey). Something like so:
+
+```coffeescript
+hapiRoutesTenantsSetup = require 'hapi-routes-tenants-setup'
+
+...
+
+server = new Hapi.Server config.server.port, config.server.host,serverOptions
+
+pluginConf = [
+  ...
+  ,
+    plugin: hapiRoutesTenantsSetup
+    options:
+      secretKey: process.env.HAPIROUTESTENANTSETUPSECRETKEY
+]
+
+server.pack.register pluginConf, (err) ->
+  throw err if err
+  ...
+```
+
+## How to post from curl
+
+```bash
+curl -H "Accept: application/json" -X POST -d @samples/sample.json http://yoursite.com/tenants/setup
+```
+
+
 
 
 ## Dependencies

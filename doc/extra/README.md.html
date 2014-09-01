@@ -47,7 +47,33 @@
 <li>roles</li>
 <li>a default oauth app + client</li>
 <li>tokens for your users</li>
-</ul><p>Basically, this allows you to bootstrap an installation using the codedoctor libraries.</p><h2 id="dependencies">Dependencies</h2>
+</ul><p>Basically, this allows you to bootstrap an installation using the codedoctor libraries.</p><p>Take a look at the samples/sample.json file, which contains the typical sample data. Both
+tenantId and clientId are optional.</p><h2 id="how-to-secure-this">How to secure this</h2><p>Several easy options:</p><ul>
+<li>Only include it when you run it for the first time, then remove it.</li>
+<li>supply a secret key, which must be included as the payload (secretKey). Something like so:</li>
+</ul>
+<pre><code class="lang-coffeescript">hapiRoutesTenantsSetup = require &#39;hapi-routes-tenants-setup&#39;
+
+...
+
+server = new Hapi.Server config.server.port, config.server.host,serverOptions
+
+pluginConf = [
+  ...
+  ,
+    plugin: hapiRoutesTenantsSetup
+    options:
+      secretKey: process.env.HAPIROUTESTENANTSETUPSECRETKEY
+]
+
+server.pack.register pluginConf, (err) -&gt;
+  throw err if err
+  ...
+</code></pre>
+<h2 id="how-to-post-from-curl">How to post from curl</h2>
+<pre><code class="lang-bash">curl -H &quot;Accept: application/json&quot; -X POST -d @samples/sample.json http://yoursite.com/tenants/setup
+</code></pre>
+<h2 id="dependencies">Dependencies</h2>
 <ul>
 <li>HAPI &gt;= 6.5.0</li>
 </ul>
@@ -90,7 +116,7 @@
       </div>
     </div>
     <div id='footer'>
-  August 31, 14 17:22:59 by
+  August 31, 14 18:39:09 by
   <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
     Codo
   </a>

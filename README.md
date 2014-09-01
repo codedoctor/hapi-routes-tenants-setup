@@ -19,7 +19,7 @@ Provides an enpoint to set up a tenant with
 
 Basically, this allows you to bootstrap an installation using the codedoctor libraries.
 
-Take a look at the samples/sample.json file, which contains the typical sample data. Both
+Take a look at the [samples/sample.json](https://github.com/codedoctor/hapi-routes-tenants-setup/blob/master/samples/sample.json) file, which contains the typical sample data. Both
 tenantId and clientId are optional.
 
 
@@ -49,6 +49,8 @@ server.pack.register pluginConf, (err) ->
   throw err if err
   ...
 ```
+
+You then set the env variable HAPIROUTESTENANTSETUPSECRETKEY at your server.
 
 ## How to post from curl
 

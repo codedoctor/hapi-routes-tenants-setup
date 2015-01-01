@@ -19,7 +19,7 @@ Main entry point for the plugin
 
 Please note that the routesBaseName is only included to make the life easier while doing the config of your HAPI server.
 ###
-module.exports.register = (plugin, options = {}, cb) ->
+module.exports.register = (server, options = {}, cb) ->
 
   defaults =
     routesBaseName: '/tenants/setup'
@@ -28,9 +28,9 @@ module.exports.register = (plugin, options = {}, cb) ->
 
   options = Hoek.applyToDefaults defaults, options
 
-  routes plugin,options
+  routes server,options
 
-  plugin.expose 'i18n',i18n
+  server.expose 'i18n',i18n
 
   cb()
 

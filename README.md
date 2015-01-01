@@ -4,7 +4,7 @@
 [![Dependency Status](https://gemnasium.com/codedoctor/hapi-routes-tenants-setup.svg)](https://gemnasium.com/codedoctor/hapi-routes-tenants-setup)
 [![NPM Downloads](http://img.shields.io/npm/dm/hapi-routes-tenants-setup.svg)](https://www.npmjs.org/package/hapi-routes-tenants-setup)
 [![Issues](http://img.shields.io/github/issues/codedoctor/hapi-routes-tenants-setup.svg)](https://github.com/codedoctor/hapi-routes-tenants-setup/issues)
-[![HAPI 6.0](http://img.shields.io/badge/hapi-6.0-blue.svg)](http://hapijs.com)
+[![HAPI 8.0](http://img.shields.io/badge/hapi-8.0-blue.svg)](http://hapijs.com)
 [![API Documentation](http://img.shields.io/badge/API-Documentation-ff69b4.svg)](http://coffeedoc.info/github/codedoctor/hapi-routes-tenants-setup)
 
 (C) 2014 Martin Wawrusch
@@ -63,7 +63,7 @@ curl -H "Content-Type: application/json" -X POST -d @samples/sample.json https:/
 
 ## Dependencies
 
-* HAPI >= 6.5.0
+* HAPI >= 8.0.0,hapi-oauth-store-multi-tenant,hapi-user-store-multi-tenant
 
 ## Plugins that must be loaded into your hapi server:
 

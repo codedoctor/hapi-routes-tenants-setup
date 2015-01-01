@@ -70,7 +70,7 @@ server.pack.register pluginConf, (err) -&gt;
   throw err if err
   ...
 </code></pre><p>You then set the env variable HAPIROUTESTENANTSETUPSECRETKEY at your server.</p><h2 id="how-to-post-from-curl">How to post from curl</h2>
-<pre><code class="lang-bash">curl -H &quot;Accept: application/json&quot; -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
+<pre><code class="lang-bash">curl -H &quot;Content-Type: application/json&quot; -X POST -d @samples/sample.json https://yoursite.com/tenants/setup
 </code></pre>
 <h2 id="dependencies">Dependencies</h2>
 <ul>
@@ -115,7 +115,7 @@ server.pack.register pluginConf, (err) -&gt;
       </div>
     </div>
     <div id='footer'>
-  August 31, 14 19:48:12 by
+  January 01, 15 13:20:25 by
   <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
     Codo
   </a>
